@@ -20,21 +20,13 @@
         'description': description
       });
   };
-
+  
   exports.sendInstanceAlreadyCreated = function(res, instance){
     var description = instance + ' already created';
     res
       .status(400)
       .json({
         'description': description
-      });
-  };
-
-  exports.sendMethodAlreadyCreated = function(res){
-    res
-      .status(400)
-      .json({
-        'description': 'Method already created'
       });
   };
 
