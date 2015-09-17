@@ -1,37 +1,32 @@
 (function(){
-  
+
   'use strict';
 
 
-  exports.sendUserNotFound = function(res){
+  exports.sendResourceNotFound = function(res, resource){
+    var description = resource + ' not found';
     res
       .status(404)
       .json({
-        'description': 'User not found'
+        'description': description
       });
   };
 
-  exports.sendNoFBIDProvided = function(res){
+  exports.sendNoParamProvided = function(res, param){
+    var description = 'A ' + param + ' should be provided into the request body';
     res
       .status(400)
       .json({
-        'description': 'A Facebook ID should be provided into the request body'
+        'description': description
       });
   };
 
-  exports.sendNoAccessTokenProvided = function(res){
+  exports.sendInstanceAlreadyCreated = function(res, instance){
+    var description = instance + ' already created';
     res
       .status(400)
       .json({
-        'description': 'An access token should be provided into the request body'
-      });
-  };
-
-  exports.sendUserAlreadyCreated = function(res){
-    res
-      .status(400)
-      .json({
-        'description': 'User already created'
+        'description': description
       });
   };
 
