@@ -12,8 +12,20 @@
       });
   };
 
+<<<<<<< cc26d731081b7a564699b02ee1215ae0ca682b8c
   exports.sendNoParamProvided = function(res, param){
     var description = 'A ' + param + ' should be provided into the request body';
+=======
+  exports.sendNoIndexProvided = function(res){
+    res
+      .status(400)
+      .json({
+        'description': 'An method index be provided into the request body'
+      });
+  };
+
+  exports.sendNoAccessTokenProvided = function(res){
+>>>>>>> Set common functions to handle method requests
     res
       .status(400)
       .json({
@@ -27,6 +39,14 @@
       .status(400)
       .json({
         'description': description
+      });
+  };
+
+  exports.sendMethodAlreadyCreated = function(res){
+    res
+      .status(400)
+      .json({
+        'description': 'Method already created'
       });
   };
 
