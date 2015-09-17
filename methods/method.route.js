@@ -1,18 +1,12 @@
 (function(){
-    'use strict';
+  'use strict';
 
-    var methods = require('./method.controller')
+  var methods = require('./method.controller')
 
-    module.exports = function(app){
-        app.get('/methods', methods.getAll);
-        app.get('/methods/:index', methods.getOne);
-        app.post('/methods', methods.create);
-    }
+  module.exports = function(app){
+    app.get('/methods', methods.getAll);
+    app.get('/methods/:index', methods.getOne);
+    app.post('/methods', methods.create);
+  }
 
 })();
-
-
-
-
-
-
