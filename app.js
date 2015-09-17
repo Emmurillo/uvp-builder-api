@@ -10,8 +10,7 @@
   var app = express();
 
   var port = process.env.PORT || 8000;
-  var users = require('./providers/user');
-  var auth = require('./providers/auth');
+  var usersAPI = require('./users/user.route');
 
 // Enable CORS support
   app.use(function (req, res, next) {
@@ -32,11 +31,7 @@
     });
   });
 
-  app.get('/users', users.getAll);
-  app.get('/users/:fb_id', users.getOne);
-  app.post('/users', users.create);
-
-  app.post('/authenticate', auth.authenticate);
+  usersAPI(app);
 
   var db = mongoose.connect('mongodb://localhost/UVP');
 
