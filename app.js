@@ -10,8 +10,9 @@
   var app = express();
 
   var port = process.env.PORT || 8000;
-  var usersAPI = require('./users/user.route');
 
+  var usersAPI = require('./users/user.route');
+  var en_USmethodsAPI = require('./methods/en_US/method.route');
 // Enable CORS support
   app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -32,6 +33,7 @@
   });
 
   usersAPI(app);
+  en_USmethodsAPI(app);
 
   var db = mongoose.connect('mongodb://localhost/UVP');
 
