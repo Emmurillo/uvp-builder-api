@@ -3,8 +3,8 @@
 
   var model = require('./method.model');
   var Method = model.Method;
-  var messenger = require('./../utils/MessageProvider');
-  var resources = require('./../utils/resources');
+  var messenger = require('./../../utils/MessageProvider');
+  var resources = require('./../../utils/resources');
 
   exports.getAll = function(req, res) {
     Method.find(function (error, methods) {
@@ -22,7 +22,7 @@
         messenger.sendGenericError(res, err);
       }
       else if(!meth){
-        messenger.sendResourceNotFound(res, Method.modelName);
+        messenger.sendResourceNotFound(res, 'Method');
       }
       else{
         messenger.sendResponse(res, meth);
@@ -44,7 +44,7 @@
     var index = method.index;
     Method.findOne({'index': index},function(err, methodFound){
       if(methodFound) {
-        messenger.sendInstanceAlreadyCreated(res, Method.modelName)
+        messenger.sendInstanceAlreadyCreated(res, 'Method')
       }
       else{
         method.save(function(err, methodCreated){

@@ -19,5 +19,5 @@
     }
   });
 
-  exports.Method = mongoose.model('Method', methodSchema);
+  exports.Method = mongoose.model('methods', methodSchema);
 })();
