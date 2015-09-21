@@ -31,4 +31,13 @@ The code tasks is automatized using [Gulp](http://gulpjs.com/) so now you just h
 gulp
 ```
 
+### Populate the DB
 
+To automatically fill the Database, this app uses [Mongo seeds](https://github.com/toymachiner62/node-mongo-seeds).
+It's necessary install it globally by running
+
+```
+npm install -g node-mongo-seeds
+```
+
+And finally run the fill task: `seed`
