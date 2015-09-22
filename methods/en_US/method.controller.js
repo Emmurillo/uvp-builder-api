@@ -16,8 +16,8 @@
   };
 
   exports.getOne = function(req, res){
-    var index = req.params.index;
-    Method.findOne({'index': index}, function(err, meth){
+    var slug = req.params.slug ;
+    Method.findOne({'slug': slug}, function(err, meth){
       if(err){
         messenger.sendGenericError(res, err);
       }
@@ -32,8 +32,8 @@
 
   exports.create = function(req, res) {
     var method = new Method(req.body);
-    if(method.index === undefined){
-      messenger.sendNoParamProvided(res, 'index');
+    if(method.slug === undefined){
+      messenger.sendNoParamProvided(res, 'slug');
     }
     else{
       createIfNoPrevious(res, method);
@@ -41,10 +41,10 @@
   };
 
   function createIfNoPrevious(res, method){
-    var index = method.index;
-    Method.findOne({'index': index},function(err, methodFound){
+    var slug = method.slug;
+    Method.findOne({'slug': slug},function(err, methodFound){
       if(methodFound) {
-        messenger.sendInstanceAlreadyCreated(res, 'Method')
+        messenger.sendInstanceAlreadyCreated(res, 'Method ' + slug)
       }
       else{
         method.save(function(err, methodCreated){
