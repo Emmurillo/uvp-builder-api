@@ -1,5 +1,6 @@
 [
   {
+    "index": 0,
     "slug": "GeoffMoores",
     "name": "Geoff Moore's Value Positioning Statement",
     "hasLabels": true,
@@ -34,6 +35,7 @@
     "example": "For digital journalist who struggle to discover the people questions our product is a publisher tool that creates powerful interviews to collect people questions"
   },
   {
+    "index": 1,
     "slug": "VentureHacks",
     "name": "Venture Hacks' High-Concept Pitch",
     "hasLabels": true,
@@ -52,6 +54,7 @@
     "example": "A smart flip of Quora"
   },
   {
+    "index": 2,
     "slug": "SteveBlanks",
     "name": "Steve Blank's XYZ",
     "hasLabels": true,
@@ -76,6 +79,7 @@
     "example": "We help digital journalist discover people questions about specific topics doing powerful interviews"
   },
   {
+    "index": 3,
     "slug": "VlaskovitsAndCoopers",
     "name": "Vlaskovits & Cooper's CPS",
     "hasLabels": false,
@@ -96,6 +100,7 @@
     "template": "$customer. $problem. $solution"
   },
   {
+    "index": 4,
     "slug": "DaveMcClures",
     "name": "Dave McClure's Elevator Ride",
     "hasLabels": true,
@@ -124,6 +129,7 @@
     "example": "Jaskr is the powerful and human way to create public interviews"
   },
   {
+    "index": 5,
     "slug": "DavidCowans",
     "name": "David Cowan's Pitchcraft",
     "hasLabels": false,
@@ -149,6 +155,7 @@
     "example": "Every day journalists spend hours finding which information people needs to know about Public Figures. We offer a publisher network to collect millions of questions and give to the journalist the popular ones with the best question recognition technology"
   },
   {
+    "index": 6,
     "slug": "EricSinksSuperlative",
     "name": "Eric Sink's Value Positioning Superlative",
     "hasLabels": false,
@@ -161,6 +168,7 @@
     "template": "$why"
   },
   {
+    "index": 7,
     "slug": "EricSinksLabel",
     "name": "Eric Sink's Value Positioning Label",
     "hasLabels": false,
@@ -173,6 +181,7 @@
     "template": "$what"
   },
   {
+    "index": 8,
     "slug": "ClayChristensen",
     "name": "Clay Christensen’s Jobs-to-be-done",
     "hasLabels": false,
@@ -194,6 +203,7 @@
     "example": "Publish the Personal Opinion Answers from the source"
   },
   {
+    "index": 9,
     "slug": "SimonSineks",
     "name": "Simon Sinek’s WHY",
     "hasLabels": false,
@@ -214,6 +224,7 @@
     "template": "$why. $how. $importance"
   },
   {
+    "index": 10,
     "slug": "MintoPyramid",
     "name": "The Minto Pyramid Principle aka SCQA",
     "hasLabels": false,
@@ -239,6 +250,7 @@
     "example": "Nowadays social networks are full of unclear information about Public Figures. Consequently, the public opinion is affected. How can social networks receive better content? Our publisher technology helps the creation of interviews for build the public opinion"
   },
   {
+    "index": 11,
     "slug": "ElevatorPitch",
     "name": "The elevator pitch format",
     "hasLabels": true,
@@ -276,6 +288,7 @@
     "example": "For digital Journalists who need to generate valuable and viral content from interviews, Jaskr is a publisher network that creates powerful interviews to collect people's questions, unlike other question and answer platforms Jaskr’s technology build a unique social experience"
   },
   {
+    "index": 12,
     "slug": "ZagFormat",
     "name": "The Zag format",
     "hasLabels": true,
@@ -295,6 +308,7 @@
     "example": "Our publisher network is the only one that helps digital journalists to create public interviews"
   },
   {
+    "index": 13,
     "slug": "ThreeWords",
     "name": "3 Words",
     "hasLabels": true,
@@ -321,6 +335,7 @@
     "example": "Unique, Popular and Truthful Interviews"
   },
   {
+    "index": 14,
     "slug": "JustWriteIt",
     "name": "Just write",
     "hasLabels": false,
@@ -333,6 +348,7 @@
     "template": "$prose"
   },
   {
+    "index": 15,
     "slug": "TheQuestion",
     "name": "The Question",
     "hasLabels": false,

@@ -1,5 +1,6 @@
 [
   {
+    "index": 0,
     "slug": "GeoffMoores",
     "name": "Geoff Moore's Value Positioning Statement",
     "hasLabels": true,
@@ -34,6 +35,7 @@
     "example": "Para periodistas digitales que luchan para descubrir las incógnitas de la gente nuestro producto es una herramienta editorial que genera poderosas entrevistas para obtener preguntas de las personas."
   },
   {
+    "index": 1,
     "slug": "VentureHacks",
     "name": "Venture Hacks' High-Concept Pitch",
     "hasLabels": true,
@@ -52,6 +54,7 @@
     "example": "Un flip inteligente para Quora."
   },
   {
+    "index": 2,
     "slug": "SteveBlanks",
     "name": "Steve Blank's XYZ",
     "hasLabels": true,
@@ -76,6 +79,7 @@
     "example": "Ayudamos a periodistas digitales a descubrir preguntas de personas sobre temas específicos mediante poderosas entrevistas."
   },
   {
+    "index": 3,
     "slug": "VlaskovitsAndCoopers",
     "name": "Vlaskovits & Cooper's CPS",
     "hasLabels": false,
@@ -96,6 +100,7 @@
     "template": "$customer. $problem. $solution"
   },
   {
+    "index": 4,
     "slug": "DaveMcClures",
     "name": "Dave McClure's Elevator Ride",
     "hasLabels": true,
@@ -124,6 +129,7 @@
     "example": "Jaskr es la forma poderosa y humana para crear entrevistas públicas."
   },
   {
+    "index": 5,
     "slug": "DavidCowans",
     "name": "David Cowan's Pitchcraft",
     "hasLabels": false,
@@ -149,6 +155,7 @@
     "example": "Todos los días, periodistas gastan muchas horas buscando la información que la gente necesita saber acerca de las figuras públicas. Ofrecemos una red editorial para recolectar miles de preguntas y darle a los periodistas las más populares con el mejor filtro tecnológico."
   },
   {
+    "index": 6,
     "slug": "EricSinksSuperlative",
     "name": "Eric Sink's Value Positioning Superlative",
     "hasLabels": false,
@@ -161,6 +168,7 @@
     "template": "$why"
   },
   {
+    "index": 7,
     "slug": "EricSinksLabel",
     "name": "Eric Sink's Value Positioning Label",
     "hasLabels": false,
@@ -173,6 +181,7 @@
     "template": "$what"
   },
   {
+    "index": 8,
     "slug": "ClayChristensen",
     "name": "Clay Christensen’s Jobs-to-be-done",
     "hasLabels": false,
@@ -194,6 +203,7 @@
     "example": "Publicar las opiniones personales desde la fuente."
   },
   {
+    "index": 9,
     "slug": "SimonSineks",
     "name": "Simon Sinek’s WHY",
     "hasLabels": false,
@@ -214,6 +224,7 @@
     "template": "$why. $how. $importance"
   },
   {
+    "index": 10,
     "slug": "MintoPyramid",
     "name": "The Minto Pyramid Principle aka SCQA",
     "hasLabels": false,
@@ -239,6 +250,7 @@
     "example": "Hoy en día, las redes sociales están llenas de información distorcionada acerca de las figuras públicas. Por lo tanto, la opinión publica está afectada. Cómo pueden las redes sociales recibir mejor contenido? Nuestra tecnología de publicaciones permite crear entrevistas para construir una opinión pública."
   },
   {
+    "index": 11,
     "slug": "ElevatorPitch",
     "name": "The elevator pitch format",
     "hasLabels": true,
@@ -276,6 +288,7 @@
     "example": "Para periodistas digitales que necesitan generar contenido viral y de valor de entrevistas, Jaskr es una red editorial que crear poderosas entrevistas para obtener preguntas de personas, a diferencia de otras plataformas la tecnología de Jaskr crea una experiencia social única."
   },
   {
+    "index": 12,
     "slug": "ZagFormat",
     "name": "The Zag format",
     "hasLabels": true,
@@ -295,6 +308,7 @@
     "example": "Nuestra red editorial es la única que ayuda a periodistas digitales a crear entrevistas públicas."
   },
   {
+    "index": 13,
     "slug": "ThreeWords",
     "name": "3 Words",
     "hasLabels": true,
@@ -321,6 +335,7 @@
     "example": "Populares, únicas y verídicas Entrevistas."
   },
   {
+    "index": 14,
     "slug": "JustWriteIt",
     "name": "Just write",
     "hasLabels": false,
@@ -333,6 +348,7 @@
     "template": "$prose"
   },
   {
+    "index": 15,
     "slug": "TheQuestion",
     "name": "The Question",
     "hasLabels": false,

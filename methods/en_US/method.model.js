@@ -6,6 +6,7 @@
 
 
   var methodSchema = new mongoose.Schema({
+    index: Number,
     slug: String,
     name: String,
     hasLabels: Boolean,
