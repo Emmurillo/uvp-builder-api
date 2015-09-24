@@ -4,9 +4,9 @@
   var methods = require('./method.controller')
 
   module.exports = function(app){
-    app.get('/es_CR/methods', methods.getAll);
-    app.get('/es_CR/methods/:slug', methods.getOne);
-    app.post('/es_CR/methods', methods.create);
+    app.get('/methods/lang/es_CR', methods.getAll);
+    app.get('/methods/lang/es_CR/:slug', methods.getOne);
+    app.post('/methods/lang/es_CR', methods.create);
   }
 
 })();

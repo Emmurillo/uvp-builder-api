@@ -1,12 +1,13 @@
 /**
  *
- * @api {get} /methods/lang/:lang Retrieve a list of methods.
+ * @api {get} /methods Retrieve a list of methods (in English as default).
  * @apiVersion 1.0.0
  * @apiName GetMethods
  * @apiGroup Methods
  * @apiUse GenericError
  *
- * @apiDescription Retrieve a list of methods from a specific language.
+ * @apiDescription Retrieve a list of methods from a specific language. You can get an specific language by request /methods/lang/:lang
+ * <br>Currently only en_US and es_CR are available.
  *
  * @apiParamExample Example query:
  * GET /methods/lang/es_CR HTTP/1.1
