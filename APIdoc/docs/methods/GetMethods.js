@@ -1,6 +1,6 @@
 /**
  *
- * @api {get} /methods Retrieve a list of methods (in English as default).
+ * @api {get} /methods Retrieve a list of methods.
  * @apiVersion 1.0.0
  * @apiName GetMethods
  * @apiGroup Methods
@@ -13,6 +13,10 @@
  * GET /methods/lang/es_CR HTTP/1.1
  * Retrieve all the methods in Costarrican Spanish.
  * Redirects to methods /methods/lang/en_US if /methods
+ *
+ * @apiParamExample Example fields:
+ * GET /methods/lang/es_CR?fields=name+has_labels+template HTTP/1.1
+ * Get Methods with only name, has_labels, template and slug (default) fields.
  *
  * @apiSuccess {Number}									index				Method index indicator.
  * @apiSuccess {String}	  								slug			Method's trimmed name identifier.
@@ -33,11 +37,11 @@
  *          "index": 0,
  *          "slug": "GeoffMoores",
  *          "name": "Geoff Moore's Value Positioning Statement",
- *          "hasLabels": true,
+ *          "has_labels": true,
  *          "template": "Para $customer que $need nuestro $product es $category que $benefit",
  *          "example": "Para periodistas digitales que luchan para descubrir las incógnitas de la gente nuestro producto es una herramienta editorial que genera poderosas entrevistas para obtener preguntas de las personas.",
  *          "created_at": "2015-09-24T15:52:22.368Z",
- *          "formFields": [
+ *          "form_fields": [
  *            {
  *              "name": "customer",
  *              "placeholder": "consumidor meta",
@@ -69,11 +73,11 @@
  *          "index": 1,
  *          "slug": "VentureHacks",
  *          "name": "Venture Hacks' High-Concept Pitch",
- *          "hasLabels": true,
+ *          "has_labels": true,
  *          "template": "$example for/of $attribute",
  *          "example": "Un flip inteligente para Quora.",
  *          "created_at": "2015-09-24T15:52:22.368Z",
- *          "formFields": [
+ *          "form_fields": [
  *            {
  *              "name": "example",
  *              "placeholder": "Ejemplo comprobado en la industria"
