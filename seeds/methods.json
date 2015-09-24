@@ -3,8 +3,8 @@
     "index": 0,
     "slug": "GeoffMoores",
     "name": "Geoff Moore's Value Positioning Statement",
-    "hasLabels": true,
-    "formFields": [
+    "has_labels": true,
+    "form_fields": [
       {
         "label": "For",
         "placeholder": "target consumer",
@@ -38,8 +38,8 @@
     "index": 1,
     "slug": "VentureHacks",
     "name": "Venture Hacks' High-Concept Pitch",
-    "hasLabels": true,
-    "formFields": [
+    "has_labels": true,
+    "form_fields": [
       {
         "placeholder": "Proven industry example",
         "name": "example"
@@ -57,8 +57,8 @@
     "index": 2,
     "slug": "SteveBlanks",
     "name": "Steve Blank's XYZ",
-    "hasLabels": true,
-    "formFields": [
+    "has_labels": true,
+    "form_fields": [
       {
         "label": "We help",
         "placeholder": "target consumer",
@@ -82,8 +82,8 @@
     "index": 3,
     "slug": "VlaskovitsAndCoopers",
     "name": "Vlaskovits & Cooper's CPS",
-    "hasLabels": false,
-    "formFields": [
+    "has_labels": false,
+    "form_fields": [
       {
         "placeholder": "Who your customer is",
         "name": "customer"
@@ -103,8 +103,8 @@
     "index": 4,
     "slug": "DaveMcClures",
     "name": "Dave McClure's Elevator Ride",
-    "hasLabels": true,
-    "formFields": [
+    "has_labels": true,
+    "form_fields": [
       {
         "placeholder": "Product/service name",
         "name": "product"
@@ -132,8 +132,8 @@
     "index": 5,
     "slug": "DavidCowans",
     "name": "David Cowan's Pitchcraft",
-    "hasLabels": false,
-    "formFields": [
+    "has_labels": false,
+    "form_fields": [
       {
         "placeholder": "Highlight the enormity of the problem you are tackling",
         "name": "problem"
@@ -158,8 +158,8 @@
     "index": 6,
     "slug": "EricSinksSuperlative",
     "name": "Eric Sink's Value Positioning Superlative",
-    "hasLabels": false,
-    "formFields": [
+    "has_labels": false,
+    "form_fields": [
       {
         "placeholder": "Why choose this product",
         "name": "why"
@@ -171,8 +171,8 @@
     "index": 7,
     "slug": "EricSinksLabel",
     "name": "Eric Sink's Value Positioning Label",
-    "hasLabels": false,
-    "formFields": [
+    "has_labels": false,
+    "form_fields": [
       {
         "placeholder": "What is this product",
         "name": "what"
@@ -184,8 +184,8 @@
     "index": 8,
     "slug": "ClayChristensen",
     "name": "Clay Christensen’s Jobs-to-be-done",
-    "hasLabels": false,
-    "formFields": [
+    "has_labels": false,
+    "form_fields": [
       {
         "placeholder": "Action verb",
         "name": "verb"
@@ -206,8 +206,8 @@
     "index": 9,
     "slug": "SimonSineks",
     "name": "Simon Sinek’s WHY",
-    "hasLabels": false,
-    "formFields": [
+    "has_labels": false,
+    "form_fields": [
       {
         "placeholder": "Clarify your Why",
         "name": "why"
@@ -227,8 +227,8 @@
     "index": 10,
     "slug": "MintoPyramid",
     "name": "The Minto Pyramid Principle aka SCQA",
-    "hasLabels": false,
-    "formFields": [
+    "has_labels": false,
+    "form_fields": [
       {
         "placeholder": "Describe the current situation",
         "name": "situation"
@@ -253,8 +253,8 @@
     "index": 11,
     "slug": "ElevatorPitch",
     "name": "The elevator pitch format",
-    "hasLabels": true,
-    "formFields": [
+    "has_labels": true,
+    "form_fields": [
       {
         "label": "For",
         "placeholder": "target customer",
@@ -291,8 +291,8 @@
     "index": 12,
     "slug": "ZagFormat",
     "name": "The Zag format",
-    "hasLabels": true,
-    "formFields": [
+    "has_labels": true,
+    "form_fields": [
       {
         "label": "Our",
         "placeholder": "product category or brand",
@@ -311,8 +311,8 @@
     "index": 13,
     "slug": "ThreeWords",
     "name": "3 Words",
-    "hasLabels": true,
-    "formFields": [
+    "has_labels": true,
+    "form_fields": [
       {
         "placeholder": "Word 1",
         "name": "word1"
@@ -338,8 +338,8 @@
     "index": 14,
     "slug": "JustWriteIt",
     "name": "Just write",
-    "hasLabels": false,
-    "formFields": [
+    "has_labels": false,
+    "form_fields": [
       {
         "placeholder": "Just write it!",
         "name": "prose"
@@ -351,8 +351,8 @@
     "index": 15,
     "slug": "TheQuestion",
     "name": "The Question",
-    "hasLabels": false,
-    "formFields": [
+    "has_labels": false,
+    "form_fields": [
       {
         "placeholder": "Do you need/want to... ?",
         "name": "question"
