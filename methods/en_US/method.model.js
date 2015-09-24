@@ -9,8 +9,8 @@
     index: Number,
     slug: String,
     name: String,
-    hasLabels: Boolean,
-    formFields: Array,
+    has_labels: Boolean,
+    form_fields: Array,
     template: String,
     example: String,
     created_at: {
