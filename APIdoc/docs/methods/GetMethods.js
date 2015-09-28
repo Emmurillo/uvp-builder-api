@@ -28,6 +28,7 @@
  * @apiSuccess {String}			                        form_fields.name			The form field identifier used into the template.
  * @apiSuccess {String}			                        form_fields.placeholder			The field's placeholder.
  * @apiSuccess {String}			                        form_fields.label			The fields title if applies.
+ * @apiSuccess {Date}			              created_at			The methods creation date.
  *
  * @apiSuccessExample {json} Success-Response:
  *     HTTP/1.1 200 OK
