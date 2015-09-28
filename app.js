@@ -10,7 +10,7 @@
   var app = express();
 
   var port = process.env.PORT || 8000;
-  
+
   var users = require('./providers/user');
   var en_USmethodsAPI = require('./methods/en_US/method.route');
   var es_CRmethodsAPI = require('./methods/es_CR/method.route');
@@ -40,7 +40,7 @@
   en_USmethodsAPI(app);
   es_CRmethodsAPI(app);
 
-  var db = mongoose.connect('mongodb://localhost/UVP');
+  var db = mongoose.connect('mongodb://localhost/' + process.env.db);
 
   app.listen(port, function () {
     console.log("Server listening on port: " + port);

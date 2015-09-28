@@ -1,5 +1,5 @@
 {
-	"undefined": "localhost/UVP",
-	"dev": "localhost/UVP",
-	"prod": "localhost/UVP"
+	"undefined": "localhost/UVP_dev",
+	"dev": "localhost/UVP_dev",
+	"prod": "localhost/UVPBuilder"
 }
