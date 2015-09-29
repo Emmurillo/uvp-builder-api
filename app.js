@@ -11,12 +11,11 @@
 
   var port = process.env.PORT || 8000;
 
-  var users = require('./providers/user');
   var en_USmethodsAPI = require('./methods/en_US/method.route');
   var es_CRmethodsAPI = require('./methods/es_CR/method.route');
 
   var usersAPI = require('./users/user.route');
-  var en_USmethodsAPI = require('./methods/en_US/method.route');
+
 // Enable CORS support
   app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");

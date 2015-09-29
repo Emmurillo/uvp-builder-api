@@ -7,7 +7,7 @@
     // Prevent defaults
     app.get('/methods', methods.getAll);
     app.get('/methods/:slug', methods.getOne);
-    app.post('/methods/:slug', methods.create);
+    app.post('/methods', methods.create);
 
     app.get('/methods/lang/en_US', methods.getAll);
     app.get('/methods/lang/en_US/:slug', methods.getOne);

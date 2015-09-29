@@ -4,7 +4,6 @@
   var model = require('./method.model');
   var Method = model.Method;
   var messenger = require('./../../utils/MessageProvider');
-  var resources = require('./../../utils/resources');
 
   exports.getAll = function(req, res) {
     var query = Method.find();
