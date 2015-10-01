@@ -31,3 +31,4 @@ node_modules
 
 # API doc auto-generated folders
 APIdoc/apidoc
+APIdoc/apidoc/
