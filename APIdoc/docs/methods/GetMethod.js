@@ -1,6 +1,6 @@
 /**
  *
- * @api {get} /method/:slug Retrieve a method.
+ * @api {get} /methods/:slug Retrieve a method.
  * @apiVersion 1.0.0
  * @apiName GetMethod
  * @apiGroup Methods
