@@ -54,7 +54,7 @@
     var fbID = user.fb_id;
     User.findOne({'fb_id': fbID},function(err, userFound){
       if(userFound) {
-        messenger.sendInstanceAlreadyCreated(res, User.modelName);
+        messenger.sendInstanceAlreadyCreated(res, 'User ' + fbID);
       }
       else{
         user.save(function(err, userCreated){
