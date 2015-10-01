@@ -7,9 +7,21 @@
 
   exports.getAll = function(req, res) {
     var user_id = req.params.fb_id
+    var query = Uvp.find();
+    selectFromQuery(query, req.query);
+    query.exec(function (error, uvps){
+      if (error)
+        messenger.sendGenericError(res, error);
+      else
+        messenger.sendResponse(res, uvps);
+    });
+  };
+
+  exports.getAllFromUser = function(req, res) {
+    var user_id = req.params.fb_id
     var query = Uvp.find({ 'user': user_id });
     selectFromQuery(query, req.query);
-    query.exec(function getMethods(error, uvps){
+    query.exec(function (error, uvps){
       if (error)
         messenger.sendGenericError(res, error);
       else
@@ -19,7 +31,7 @@
 
   exports.getOne = function(req, res){
     var uvp_id = req.params.uvp_id ;
-    var query = Uvp.findOne({'_id': uvp_id});
+    var query = Uvp.findOne(uvp_id);
     selectFromQuery(query, req.query);
     query.exec(function getUvp(err, uvp){
         if(err){
@@ -31,8 +43,7 @@
         else{
           messenger.sendResponse(res, uvp);
         }
-      }
-    );
+      });
   };
 
   function selectFromQuery(query, req){
@@ -44,9 +55,20 @@
 
   exports.create = function(req, res) {
     var uvp = new Uvp(req.body);
-    method.save(function(err, methodCreated){
+    uvp.save(function(err, createdUVP){
       if(!err)
-        messenger.sendResponse(res, methodCreated);
+        messenger.sendResponse(res, createdUVP);
+      else
+        messenger.sendGenericError(res, err);
+    });
+  };
+
+  exports.update = function(req, res) {
+    var updates = req.body;
+    var uvp_id = req.params.uvp_id;
+    Uvp.update(uvp_id, updates, function updateUVP(err, updatedUVP) {
+      if(!err)
+        messenger.sendResponse(res, updatedUVP);
       else
         messenger.sendGenericError(res, err);
     });
