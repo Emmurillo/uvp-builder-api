@@ -15,6 +15,7 @@
   var es_CRmethodsAPI = require('./methods/es_CR/method.route');
 
   var usersAPI = require('./users/user.route');
+  var uvpsAPI = require('./uvps/uvp.route');
 
 // Enable CORS support
   app.use(function (req, res, next) {
@@ -36,6 +37,7 @@
   });
 
   usersAPI(app);
+  uvpsAPI(app);
   en_USmethodsAPI(app);
   es_CRmethodsAPI(app);
 
