@@ -6,7 +6,9 @@
   var messenger = require('./../utils/MessageProvider');
 
   exports.getAll = function(req, res) {
-    User.find(function (error, users) {
+    var query = User.find();
+    removeMongoFields(query);
+    query.exec(function getUsers(error, users){
       if (error)
         messenger.sendGenericError(res, error);
       else
@@ -16,18 +18,27 @@
 
   exports.getOne = function(req, res){
     var fb_id = req.params.fb_id;
-    User.findOne({'fb_id': fb_id}, function(err, usr){
-      if(err){
-        messenger.sendGenericError(res, err);
+    var query = User.findOne({'fb_id': fb_id});
+    removeMongoFields(query);
+    query.exec(function getUser(err, usr){
+        if(err){
+          messenger.sendGenericError(res, err);
+        }
+        else if(!usr){
+          messenger.sendResourceNotFound(res, 'User');
+        }
+        else{
+          messenger.sendResponse(res, usr);
+        }
       }
-      else if(!usr){
-        messenger.sendResourceNotFound(res, User.modelName);
-      }
-      else{
-        messenger.sendResponse(res, usr);
-      }
-    });
+    );
   };
+
+
+  function removeMongoFields(query){
+    query.select('-__v');
+    query.select('-_id');
+  }
 
   exports.create = function(req, res) {
     var user = new User(req.body);
@@ -43,7 +54,7 @@
     var fbID = user.fb_id;
     User.findOne({'fb_id': fbID},function(err, userFound){
       if(userFound) {
-        messenger.sendInstanceAlreadyCreated(res, User.modelName);
+        messenger.sendInstanceAlreadyCreated(res, 'User ' + fbID);
       }
       else{
         user.save(function(err, userCreated){
@@ -57,4 +68,3 @@
   }
 
 })();
-
