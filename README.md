@@ -31,4 +31,33 @@ The code tasks is automatized using [Gulp](http://gulpjs.com/) so now you just h
 gulp
 ```
 
+### Populate the DB
+
+To automatically fill the Database, this app uses [Mongo seeds](https://github.com/toymachiner62/node-mongo-seeds).
+It's necessary install it globally by running
+
+```
+npm install -g node-mongo-seeds
+```
+
+And finally run the fill task: `seed`
+
+### Add language support
+
+The app allows you to add new languages to the DB and retrieve them from the API.
+
+#### Adding the model
+
+It's as easy as add the JSON file into the `seeds` folder and run the `seed` task.
+
+> Note: 
+- The JSON's name will be the DB collection's name too.
+Example: methods.json will turn in a methods collection on the DB.
+- Be careful when running `seed` as it replaces the whole collection.
+
+### Adding the API
+
+To add the language support to the API create a new module with the language name into methods and copy-paste
+any previous valid method scripts.
+Rename the API URLs with your language and finally rename the model with your collection/json name.
 

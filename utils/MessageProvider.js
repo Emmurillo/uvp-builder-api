@@ -20,7 +20,7 @@
         'description': description
       });
   };
-
+  
   exports.sendInstanceAlreadyCreated = function(res, instance){
     var description = instance + ' already created';
     res
@@ -63,4 +63,3 @@
       });
   };
 })();
-

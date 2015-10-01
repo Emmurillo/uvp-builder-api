@@ -27,5 +27,7 @@ build/Release
 node_modules
 
 # Custom folders
-
 .idea
+
+# API doc auto-generated folders
+APIdoc/apidoc

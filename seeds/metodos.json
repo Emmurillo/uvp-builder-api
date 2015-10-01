@@ -1,0 +1,364 @@
+[
+  {
+    "index": 0,
+    "slug": "GeoffMoores",
+    "name": "Geoff Moore's Value Positioning Statement",
+    "has_labels": true,
+    "form_fields": [
+      {
+        "label": "Para",
+        "placeholder": "consumidor meta",
+        "name": "customer"
+      },
+      {
+        "label": "que",
+        "placeholder": "declaración de necesidad u oportunidad",
+        "name": "need"
+      },
+      {
+        "label": "nuestro",
+        "placeholder": "nombre del producto/servicio",
+        "name": "product"
+      },
+      {
+        "label": "es",
+        "placeholder": "un/una categoría de producto",
+        "name": "category"
+      },
+      {
+        "label": "que",
+        "placeholder": "declaración de beneficio",
+        "name": "benefit"
+      }
+    ],
+    "template": "Para $customer que $need nuestro $product es $category que $benefit",
+    "example": "Para periodistas digitales que luchan para descubrir las incógnitas de la gente nuestro producto es una herramienta editorial que genera poderosas entrevistas para obtener preguntas de las personas."
+  },
+  {
+    "index": 1,
+    "slug": "VentureHacks",
+    "name": "Venture Hacks' High-Concept Pitch",
+    "has_labels": true,
+    "form_fields": [
+      {
+        "placeholder": "Ejemplo comprobado en la industria",
+        "name": "example"
+      },
+      {
+        "label": "a/para",
+        "placeholder": "atributo",
+        "name": "attribute"
+      }
+    ],
+    "template": "$example for/of $attribute",
+    "example": "Un flip inteligente para Quora."
+  },
+  {
+    "index": 2,
+    "slug": "SteveBlanks",
+    "name": "Steve Blank's XYZ",
+    "has_labels": true,
+    "form_fields": [
+      {
+        "label": "Ayudamos",
+        "placeholder": "consumidor meta",
+        "name": "customer"
+      },
+      {
+        "label": "a lograr",
+        "placeholder": "objetivo",
+        "name": "objective"
+      },
+      {
+        "label": "mediante",
+        "placeholder": "producto",
+        "name": "product"
+      }
+    ],
+    "template": "Ayudamos $customer a lograr $objective mediante $product",
+    "example": "Ayudamos a periodistas digitales a descubrir preguntas de personas sobre temas específicos mediante poderosas entrevistas."
+  },
+  {
+    "index": 3,
+    "slug": "VlaskovitsAndCoopers",
+    "name": "Vlaskovits & Cooper's CPS",
+    "has_labels": false,
+    "form_fields": [
+      {
+        "placeholder": "Tu cliente",
+        "name": "customer"
+      },
+      {
+        "placeholder": "El problema que resuelves para el cliente",
+        "name": "problem"
+      },
+      {
+        "placeholder": "Cuál es tu solución para el problema",
+        "name": "solution"
+      }
+    ],
+    "template": "$customer. $problem. $solution"
+  },
+  {
+    "index": 4,
+    "slug": "DaveMcClures",
+    "name": "Dave McClure's Elevator Ride",
+    "has_labels": true,
+    "form_fields": [
+      {
+        "placeholder": "Nombre del producto/servicio",
+        "name": "product"
+      },
+      {
+        "label": "es",
+        "placeholder": "primer adjetivo",
+        "name": "firstAdjective"
+      },
+      {
+        "label": "y",
+        "placeholder": "segundo adjetivo",
+        "name": "secondAdjective"
+      },
+      {
+        "label": "para",
+        "placeholder": "mejor atributo",
+        "name": "attribute"
+      }
+    ],
+    "template": "$product es $firstAdjective y $secondAdjective para $attribute",
+    "example": "Jaskr es la forma poderosa y humana para crear entrevistas públicas."
+  },
+  {
+    "index": 5,
+    "slug": "DavidCowans",
+    "name": "David Cowan's Pitchcraft",
+    "has_labels": false,
+    "form_fields": [
+      {
+        "placeholder": "Resalta la inmensidad del problema que atacas",
+        "name": "problem"
+      },
+      {
+        "placeholder": "Dile a la audencia de frente lo que tu compañía vende",
+        "name": "product"
+      },
+      {
+        "placeholder": "Destila la diferencia a una oración, fácil de comprender",
+        "name": "differentiation"
+      },
+      {
+        "placeholder": "Establece la genealogía de los clientes o inversionistas",
+        "name": "pedigree"
+      }
+    ],
+    "template": "$problem. $product. $differentiation. $pedigree",
+    "example": "Todos los días, periodistas gastan muchas horas buscando la información que la gente necesita saber acerca de las figuras públicas. Ofrecemos una red editorial para recolectar miles de preguntas y darle a los periodistas las más populares con el mejor filtro tecnológico."
+  },
+  {
+    "index": 6,
+    "slug": "EricSinksSuperlative",
+    "name": "Eric Sink's Value Positioning Superlative",
+    "has_labels": false,
+    "form_fields": [
+      {
+        "placeholder": "Por qué escoger este producto",
+        "name": "why"
+      }
+    ],
+    "template": "$why"
+  },
+  {
+    "index": 7,
+    "slug": "EricSinksLabel",
+    "name": "Eric Sink's Value Positioning Label",
+    "has_labels": false,
+    "form_fields": [
+      {
+        "placeholder": "Qué es el producto",
+        "name": "what"
+      }
+    ],
+    "template": "$what"
+  },
+  {
+    "index": 8,
+    "slug": "ClayChristensen",
+    "name": "Clay Christensen’s Jobs-to-be-done",
+    "has_labels": false,
+    "form_fields": [
+      {
+        "placeholder": "Verbo",
+        "name": "verb"
+      },
+      {
+        "placeholder": "objeto de acción",
+        "name": "action"
+      },
+      {
+        "placeholder": "identificador contextual",
+        "name": "identifier"
+      }
+    ],
+    "template": "$verb $action $identifier",
+    "example": "Publicar las opiniones personales desde la fuente."
+  },
+  {
+    "index": 9,
+    "slug": "SimonSineks",
+    "name": "Simon Sinek’s WHY",
+    "has_labels": false,
+    "form_fields": [
+      {
+        "placeholder": "Clarifica tu Porqué",
+        "name": "why"
+      },
+      {
+        "placeholder": "Articula tus Cómos",
+        "name": "how"
+      },
+      {
+        "placeholder": "La importancia de ser consistente en lo que haces",
+        "name": "importance"
+      }
+    ],
+    "template": "$why. $how. $importance"
+  },
+  {
+    "index": 10,
+    "slug": "MintoPyramid",
+    "name": "The Minto Pyramid Principle aka SCQA",
+    "has_labels": false,
+    "form_fields": [
+      {
+        "placeholder": "Describa la situación actual",
+        "name": "situation"
+      },
+      {
+        "placeholder": "Describa el problema de esta situación",
+        "name": "issue"
+      },
+      {
+        "placeholder": "Describa la pregunta en respuesta a ese problema",
+        "name": "question"
+      },
+      {
+        "placeholder": "Sugiera una solución que mitigue el problema",
+        "name": "answer"
+      }
+    ],
+    "template": "$situation. $issue. $question $answer",
+    "example": "Hoy en día, las redes sociales están llenas de información distorcionada acerca de las figuras públicas. Por lo tanto, la opinión publica está afectada. Cómo pueden las redes sociales recibir mejor contenido? Nuestra tecnología de publicaciones permite crear entrevistas para construir una opinión pública."
+  },
+  {
+    "index": 11,
+    "slug": "ElevatorPitch",
+    "name": "The elevator pitch format",
+    "has_labels": true,
+    "form_fields": [
+      {
+        "label": "Para",
+        "placeholder": "cliente meta",
+        "name": "customer"
+      },
+      {
+        "label": "el cual",
+        "placeholder": "necesidad del cliente",
+        "name": "need"
+      },
+      {
+        "placeholder": "nombre del producto",
+        "name": "product"
+      },
+      {
+        "label": "que",
+        "placeholder": "beneficio clave",
+        "name": "benefit"
+      },
+      {
+        "label": "diferente de",
+        "placeholder": "competencia",
+        "name": "competition"
+      },
+      {
+        "placeholder": "diferenciador único",
+        "name": "differentiator"
+      }
+    ],
+    "template": "Para $customer el/la cual $need, $product que $benefit, a diferencia de $competition, $differentiator",
+    "example": "Para periodistas digitales que necesitan generar contenido viral y de valor de entrevistas, Jaskr es una red editorial que crear poderosas entrevistas para obtener preguntas de personas, a diferencia de otras plataformas la tecnología de Jaskr crea una experiencia social única."
+  },
+  {
+    "index": 12,
+    "slug": "ZagFormat",
+    "name": "The Zag format",
+    "has_labels": true,
+    "form_fields": [
+      {
+        "label": "Nuestro",
+        "placeholder": "Categoría de producto o marca",
+        "name": "category"
+      },
+      {
+        "label": "es la única",
+        "placeholder": "mejor atributo para el cliente",
+        "name": "attribute"
+      }
+    ],
+    "template": "Nuestro(a) $category es la/el única/único $attribute",
+    "example": "Nuestra red editorial es la única que ayuda a periodistas digitales a crear entrevistas públicas."
+  },
+  {
+    "index": 13,
+    "slug": "ThreeWords",
+    "name": "3 Words",
+    "has_labels": true,
+    "form_fields": [
+      {
+        "placeholder": "Palabra 1",
+        "name": "word1"
+      },
+      {
+        "placeholder": "Palabra 2",
+        "name": "word2"
+      },
+      {
+        "label": "y",
+        "placeholder": "Palabra 3",
+        "name": "word3"
+      },
+      {
+        "placeholder": "nombre del producto/servicio",
+        "name": "product"
+      }
+    ],
+    "template": "$word1, $word2 y $word3 $product",
+    "example": "Populares, únicas y verídicas Entrevistas."
+  },
+  {
+    "index": 14,
+    "slug": "JustWriteIt",
+    "name": "Just write",
+    "has_labels": false,
+    "form_fields": [
+      {
+        "placeholder": "Solo escríbelo!",
+        "name": "prose"
+      }
+    ],
+    "template": "$prose"
+  },
+  {
+    "index": 15,
+    "slug": "TheQuestion",
+    "name": "The Question",
+    "has_labels": false,
+    "form_fields": [
+      {
+        "placeholder": "Usted necesita/desea ... ?",
+        "name": "question"
+      }
+    ],
+    "template": "$question",
+    "example": "Desea crear una nueva forma de obtener entrevistas?"
+  }
+]
