@@ -32,12 +32,7 @@
   };
 
   exports.getOne = function(req, res){
-
     var uvp_id = req.params.uvp_id;
-    if (!uvp_id instanceof mongoose.Schema.Types.ObjectId){
-      uvp_id = mongoose.Types.ObjectId(uvp_id);
-    }
-
     var query = Uvp.findOne({ '_id': uvp_id });
     selectFromQuery(query, req.query);
     query.exec(function getUvp(err, uvp){
