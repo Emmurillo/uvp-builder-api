@@ -1,6 +1,8 @@
 (function(){
   'use strict';
 
+  var mongoose = require('mongoose');
+
   var model = require('./uvp.model');
   var Uvp = model.Uvp;
   var messenger = require('./../utils/MessageProvider');
@@ -30,8 +32,9 @@
   };
 
   exports.getOne = function(req, res){
-    var uvp_id = req.params.uvp_id ;
-    var query = Uvp.findOne(uvp_id);
+    var uvp_id = req.params.uvp_id;
+    
+    var query = Uvp.findOne({ '_id': uvp_id });
     selectFromQuery(query, req.query);
     query.exec(function getUvp(err, uvp){
         if(err){
@@ -55,6 +58,7 @@
 
   exports.create = function(req, res) {
     var uvp = new Uvp(req.body);
+    uvp.user = req.params.fb_id
     uvp.save(function(err, createdUVP){
       if(!err)
         messenger.sendResponse(res, createdUVP);
