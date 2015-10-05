@@ -8,7 +8,7 @@
     app.get('/uvps/user/:fb_id', Uvp.getAllFromUser);
     app.get('/uvps/:uvp_id', Uvp.getOne);
     app.put('/uvps/:uvp_id', Uvp.update);
-    app.post('/uvps', Uvp.create);
+    app.post('/uvps/:fb_id', Uvp.create);
   };
 
 })();
