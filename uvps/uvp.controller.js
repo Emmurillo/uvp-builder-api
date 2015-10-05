@@ -33,7 +33,6 @@
 
   exports.getOne = function(req, res){
     var uvp_id = req.params.uvp_id;
-    
     var query = Uvp.findOne({ '_id': uvp_id });
     selectFromQuery(query, req.query);
     query.exec(function getUvp(err, uvp){
