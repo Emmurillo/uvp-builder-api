@@ -9,7 +9,6 @@
     user: String,
     method: String,
     fields: Array,
-    uvp_text: String,
     created_at: {
       type: Date,
       default: new Date()
