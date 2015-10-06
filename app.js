@@ -39,7 +39,10 @@
   en_USmethodsAPI(app);
   es_CRmethodsAPI(app);
 
-  var db = mongoose.connect('mongodb://' + process.env.db);
+  var db = mongoose.connect(process.env.db, function (error) {
+    if (error) console.error(error);
+    else console.log('mongo connected');
+  });
 
   app.listen(port, function () {
     console.log("Server listening on port: " + port);

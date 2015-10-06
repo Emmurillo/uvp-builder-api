@@ -40,7 +40,7 @@ gulp.task('prod', function(){
         env: {
             PORT: 8000,
             NODE_ENV: 'prod',
-            db: 'heroku_jqt84c4w:31tgc2bj35eooc623psma4ibuf@ds031611.mongolab.com:31611/heroku_jqt84c4w'
+            db: process.env.MONGOLAB_URI
         },
         ignore: ['/node_modules/**']
     })
