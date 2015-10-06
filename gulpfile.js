@@ -8,7 +8,7 @@ gulp.task('default', function(){
         env: {
             PORT: 8000,
             NODE_ENV: 'dev',
-            db: 'UVP_dev'
+            db: 'localhost/UVP_dev'
         },
         ignore: ['/node_modules/**']
     })
@@ -24,7 +24,7 @@ gulp.task('staging', function(){
         env: {
             PORT: 8000,
             NODE_ENV: 'staging',
-            db: 'UVP_prod'
+            db: 'localhost/UVP_test'
         },
         ignore: ['/node_modules/**']
     })
@@ -33,14 +33,14 @@ gulp.task('staging', function(){
         })
 });
 
-gulp.task('production', function(){
+gulp.task('prod', function(){
     nodemon({
         script: 'app.js',
         ext: 'js',
         env: {
             PORT: 8000,
             NODE_ENV: 'prod',
-            db: 'UVP_prod'
+            db: 'pernix:Pernix123.@ds029814.mongolab.com:29814/uvp_builder'
         },
         ignore: ['/node_modules/**']
     })
