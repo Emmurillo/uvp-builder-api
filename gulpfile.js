@@ -1,5 +1,17 @@
-var gulp = require('gulp'),
-    nodemon = require('gulp-nodemon');
+var gulp = require('gulp');
+var nodemon = require('gulp-nodemon');
+var mocha = require('gulp-mocha');
+    
+gulp.task('test', function () {
+    return gulp.src('tests/**/*.spec.js')
+        .pipe(mocha())
+        .once('error', function () {
+            process.exit(1);
+        })
+        .once('end', function () {
+            process.exit();
+        });
+})
 
 gulp.task('default', function(){
     nodemon({
