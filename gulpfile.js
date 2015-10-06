@@ -38,7 +38,7 @@ gulp.task('prod', function(){
         script: 'app.js',
         ext: 'js',
         env: {
-            PORT: 8000,
+            PORT: process.env.PORT || 8000,
             NODE_ENV: 'prod',
             db: process.env.MONGOLAB_URI
         },
